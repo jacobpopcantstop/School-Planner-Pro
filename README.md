@@ -18,3 +18,17 @@ View your app in AI Studio: https://ai.studio/apps/temp/1
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy to GitHub Pages
+
+This repo now includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` that auto-deploys on pushes to `main`.
+
+One-time setup in GitHub:
+
+1. Go to **Settings -> Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. (Recommended) Add repository secret `GEMINI_API_KEY` under **Settings -> Secrets and variables -> Actions**.
+
+After that, push to `main` and the site will publish to:
+
+`https://jacobpopcantstop.github.io/School-Planner-Pro/`
